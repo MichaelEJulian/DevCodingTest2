@@ -11,7 +11,9 @@ function processTransaction() {
     }
 }
 
-Answer : We can join the table payroll and transaction to decrease the number of query calls to the DB so we only select transaction that are processed.
+Answer : 
+* We can join the table payroll and transaction to decrease the number of query calls to the DB so 
+we only select transaction that are processed.
 
 function processTransaction() {
     $db = Database::getInstance(); 
@@ -23,3 +25,6 @@ function processTransaction() {
     }
 }
 
+* We can also add a a return value if processing fails or succeed. 
+
+* Adding try, catch then if an exception return/log that error.
