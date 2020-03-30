@@ -17,6 +17,6 @@ function multiply_recursion(int $num1, int $num2) : int{
 
 $multiplicand = 3;
 $multiplier = 5;
-echo "Mutiply : $multiplicand * $multiplier = ";
+echo "Multiply : $multiplicand * $multiplier = ";
 echo multiply_recursion($multiplicand, $multiplier);
 
