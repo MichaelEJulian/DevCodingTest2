@@ -8,10 +8,10 @@ function multiply_recursion(int $num1, int $num2) : int{
     if($num2 == 0) 
         return 0;
         
-    if ($num2 > 0) //positive mutiplicand
+    if ($num2 > 0) //positive multiplier
         return ($num1 + multiply_recursion($num1, ($num2-1)));
     
-    if ($num2 < 0) //negative mutiplicand (change sign to +)
+    if ($num2 < 0) //negative multiplier (change sign to +)
         return -multiply_recursion($num1, -$num2);
 } 
 
